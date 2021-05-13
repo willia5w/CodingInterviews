@@ -13,21 +13,22 @@
 
 # Iteration
 When index is important
-> `for(int i = 0; i <= 0; i++) {
+> for(int i = 0; i <= 0; i++) {
 > do something\
-> }`
+> }
 
 When only the item is important
-> `for (Object obj: List<Object> list) {
+> for (Object obj: List<Object> list) {
 >    // do something
-> }`
+> }
 
 Iterator<String> it = cars.iterator();
 > while(it.hasNext()) 
 > System.out.println(it.next());
 
 # Sort
-> Collections.sort(sortableList);
+> By Value: Collections.sort(sortableList);
+> Tuple Lambda: Arrays.sort(pairs, (a, b) -> a[0] - b[0]);
 
 # ArrayList
 `import java.util.*;`
@@ -51,8 +52,6 @@ List<String> stringList = new ArrayList<>();\
 > String.valueOf() to convert some data to a String
 > String.equals() to compare strings (always prefer this to x.equals(y) since this will fail if x is null)
 > Get value of a char: int a = Integer.parseInt(String.valueOf(ch)); 
-
-
 
 # HashMap
 HashMap<String, Integer> map = new HashMap<>();

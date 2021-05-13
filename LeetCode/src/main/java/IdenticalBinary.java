@@ -1,12 +1,8 @@
 package src.main.java;
-
 import java.util.*;
 
-
    /*
-
    Problem: Check if 2 binary trees are identical or not
-
 
              1
             2, 2
@@ -16,17 +12,12 @@ import java.util.*;
             2, 2
           3, 4, 3, 4
 
-
    I; 2 Node Objects
    O: Boolean for identical or not
    E:
    "Is Identical"
    "Check(Node n)"
     */
-
-
-
-
 
 public class IdenticalBinary {
 
@@ -73,7 +64,7 @@ public class IdenticalBinary {
         y.right.left = new Node(16);
         y.right.right = new Node(25);
     
-       System.out.println(worker(x, y));
+        System.out.println(worker(x, y));
     }
 
     public static boolean worker(Node n1, Node n2) {
